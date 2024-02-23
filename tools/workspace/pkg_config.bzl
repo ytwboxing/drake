@@ -124,6 +124,7 @@ cc_library(
                 possible_libdirs = [
                     "/usr/lib",
                     "/usr/lib/x86_64-linux-gnu",
+                    "/usr/lib/aarch64-linux-gnu",
                 ]
                 suffix = ".so"
             else:

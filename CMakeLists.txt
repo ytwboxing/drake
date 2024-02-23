@@ -400,6 +400,8 @@ macro(override_repository NAME)
   list(APPEND BAZEL_WORKSPACE_EXCLUDES "${NAME}")
 endmacro()
 
+list(APPEND BAZEL_CONFIGS --define=NO_DREAL=ON)
+
 option(WITH_USER_EIGEN "Use user-provided Eigen3" OFF)
 
 if(WITH_USER_EIGEN)
